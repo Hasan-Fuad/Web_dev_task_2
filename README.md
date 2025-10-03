@@ -23,5 +23,6 @@
 ## 🛠️ Built With
 
 - HTML5, CSS, JavaScript
+- jQuery 3.6.0 used as the library for the JavaScript logic
 
 **Change colors** by editing the gradient in `styles.css`
