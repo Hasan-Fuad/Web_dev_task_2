@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: darkslategray;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+/* peach Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(135deg, lightpink 0%, lavenderblush 25%, peachpuff 50%, lavenderblush 75%, lightpink 100%);
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+/* Content Sections */
+.content {
+    background: linear-gradient(135deg, lightpink 0%, lavenderblush 25%, peachpuff 50%, lavenderblush 75%, lightpink 100%);
+    position: relative;
+    z-index: 10;
+}
+
+.story-section {
+    padding: 6rem 0;
+    position: relative;
+    z-index: 15;
+}
+
+.text-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 20;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: mediumvioletred;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: gray;
+    text-align: justify;
+}
+
+/* Floating Peaches */
+.floating-peach {
+    position: fixed;
+    z-index: 100;
+    opacity: 0.8;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+}
+
+.floating-peach.large {
+    font-size: 5rem;
+    opacity: 0.9;
+}
+
+.floating-peach.medium {
+    font-size: 3.5rem;
+    opacity: 0.7;
+}
+
+.floating-peach.small {
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+/* Individual peach positions */
+.peach-float-1 { top: 80vh; left: 5%; }
+.peach-float-2 { top: 120vh; right: 10%; }
+.peach-float-3 { top: 100vh; left: 70%; }
+.peach-float-4 { top: 180vh; left: 15%; }
+.peach-float-5 { top: 160vh; right: 20%; }
+.peach-float-6 { top: 140vh; left: 80%; }
+.peach-float-7 { top: 220vh; right: 15%; }
+.peach-float-8 { top: 200vh; left: 10%; }
+.peach-float-9 { top: 90vh; right: 25%; }
+.peach-float-10 { top: 130vh; left: 40%; }
+.peach-float-11 { top: 190vh; right: 40%; }
+.peach-float-12 { top: 240vh; left: 60%; }
+
+/* Journey to Europe section peaches */
+.peach-float-13 { top: 260vh; right: 5%; }
+.peach-float-14 { top: 280vh; left: 25%; }
+.peach-float-15 { top: 270vh; right: 30%; }
+.peach-float-16 { top: 290vh; left: 70%; }
+.peach-float-17 { top: 265vh; left: 5%; }
+.peach-float-18 { top: 310vh; right: 20%; }
+.peach-float-19 { top: 295vh; left: 45%; }
+.peach-float-20 { top: 320vh; right: 60%; }
+
+/* New World Adventure section peaches */
+.peach-float-21 { top: 340vh; left: 10%; }
+.peach-float-22 { top: 360vh; right: 15%; }
+.peach-float-23 { top: 350vh; left: 60%; }
+.peach-float-24 { top: 380vh; right: 35%; }
+.peach-float-25 { top: 370vh; left: 30%; }
+.peach-float-26 { top: 390vh; right: 5%; }
+.peach-float-27 { top: 355vh; left: 80%; }
+.peach-float-28 { top: 375vh; right: 70%; }
+
+/* Modern Peach Culture section peaches */
+.peach-float-29 { top: 410vh; left: 15%; }
+.peach-float-30 { top: 430vh; right: 25%; }
+.peach-float-31 { top: 420vh; left: 65%; }
+.peach-float-32 { top: 450vh; right: 10%; }
+.peach-float-33 { top: 440vh; left: 35%; }
+.peach-float-34 { top: 460vh; right: 45%; }
+.peach-float-35 { top: 425vh; left: 85%; }
+.peach-float-36 { top: 455vh; right: 75%; }
+
+/* Grand Finale Section */
+.finale-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, lightpink 0%, lavenderblush 25%, peachpuff 50%, lavenderblush 75%, lightpink 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.big-peach-container {
+    text-align: center;
+    position: relative;
+    z-index: 50;
+}
+
+.big-peach {
+    font-size: 15rem;
+    animation: bigPeachFloat 4s ease-in-out infinite, bigPeachGlow 3s ease-in-out infinite alternate;
+    display: block;
+    margin: 2rem auto;
+    filter: drop-shadow(0 0 30px rgba(255, 182, 193, 0.6));
+}
+
+@keyframes bigPeachFloat {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg) scale(1);
+    }
+    50% { 
+        transform: translateY(-30px) rotate(5deg) scale(1.05);
+    }
+}
+
+@keyframes bigPeachGlow {
+    from { 
+        filter: drop-shadow(0 0 30px rgba(255, 182, 193, 0.6));
+    }
+    to { 
+        filter: drop-shadow(0 0 50px rgba(255, 182, 193, 0.9)) 
+                drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+    }
+}
+
+.peach-sparkles {
+    position: relative;
+    height: 0;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 2rem;
+    animation: sparkleAnimation 2s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+@keyframes sparkleAnimation {
+    0%, 100% { 
+        opacity: 0.3;
+        transform: scale(0.8) translateY(0px);
+    }
+    50% { 
+        opacity: 1;
+        transform: scale(1.2) translateY(-10px);
+    }
+}
+
+.sparkle:nth-child(1) { top: -12rem; left: -8rem; animation-delay: 0s; }
+.sparkle:nth-child(2) { top: -15rem; right: -6rem; animation-delay: 0.5s; }
+.sparkle:nth-child(3) { top: -8rem; left: -12rem; animation-delay: 1s; }
+.sparkle:nth-child(4) { top: -10rem; right: -10rem; animation-delay: 1.5s; }
+.sparkle:nth-child(5) { top: -18rem; left: 2rem; animation-delay: 0.3s; }
+.sparkle:nth-child(6) { top: -6rem; right: 2rem; animation-delay: 0.8s; }
+
+.finale-text {
+    margin-top: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.finale-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+.finale-text p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 2s ease-out 0.5s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .text-content {
+        margin: 0 1rem;
+        padding: 2rem;
+    }
+    
+    .text-content h2 {
+        font-size: 2rem;
+    }
+    
+    .story-section {
+        padding: 4rem 0;
+    }
+    
+    .floating-peach {
+        display: none;
+    }
+    
+    .big-peach {
+        font-size: 10rem;
+    }
+    
+    .finale-text h2 {
+        font-size: 2rem;
+    }
+    
+    .finale-text p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .sparkle {
+        font-size: 1.5rem;
+    }
+}
